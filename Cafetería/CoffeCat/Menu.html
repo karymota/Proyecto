@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catsito-Menu</title>
+    <link rel="shortcut icon" href="Fotos/Copia_de_premium_bakery-removebg-preview (1).png " > 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -15,7 +16,7 @@
   </head>
   <body>
     <section id="navar">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
         <a href="Home.html"><img src="Fotos/logocat.png" alt="" width="125"
             /></a>
 
@@ -36,14 +37,14 @@
               <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="Menu.html">Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Ingresar.html">Ingresar</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="Contacto.html">Contacto</a>
             </li>
           </ul>
 
@@ -67,7 +68,7 @@
     <section id="menusito">
 
       <div class="divicion">
-        <img src="Fotos/gatitos-removebg-preview.png" alt="" width="500">
+        <img class="vw-50" src="Fotos/gatitos-removebg-preview.png" alt="" width="500">
         <h5>BEBIDAS</h5>
 
       </div>
@@ -111,7 +112,7 @@
       </div>
 
       <div class="divicion">
-        <img src="Fotos/gatitos-removebg-preview.png" alt="" width="500">
+        <img class="vw-50"src="Fotos/gatitos-removebg-preview.png" alt="" width="500">
         <h5>POSTRES</h5>
 
       </div>
@@ -156,7 +157,7 @@
 
       </div>
       <div class="divicion">
-        <img src="Fotos/gatitos-removebg-preview.png" alt="" width="500">
+        <img class="vw-50" src="Fotos/gatitos-removebg-preview.png" alt="" width="500">
         <h5>COMBOS</h5>
 
       </div>
@@ -200,7 +201,7 @@
       </div>
 
       <div class="divicion">
-        <img src="Fotos/gatitos-removebg-preview.png" alt="" width="500">
+        <img class="vw-50" src="Fotos/gatitos-removebg-preview.png" alt="" width="500">
 
       </div>
 
@@ -240,10 +241,33 @@
                 <!--Grid column-->
                 <div class="col-auto">
                   <!-- Submit button -->
-                  <button type="submit" class="btn btn-outline-light mb-4">
+                  <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">
                     Ingresar Email
                   </button>
-                </div>
+                
+                
+                <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title text-dark" id="exampleModalLabel">A un paso de empezar a recibir promociones gatunas 🐈</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-dark">
+        <H7>¿Estas seguro de que este es tu correo?</H7>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-warning">Si!</button>
+      </div>
+    </div>
+  </div>
+</div>
                 <!--Grid column-->
               </div>
               <!--Grid row-->
@@ -263,6 +287,13 @@
         <!-- Copyright -->
       </footer>
     </section>
-
+    <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
   </body>
 </html>
