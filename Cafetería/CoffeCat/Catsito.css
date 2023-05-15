@@ -227,7 +227,7 @@ a{color:inherit;text-decoration:none}
 	width:100%;
 	margin:auto;
 	max-width:1000px;
-	min-height:670px;
+	min-height:750px;
 	position:relative;
 	background: url(Fotos/logocat.png) no-repeat center;
 	box-shadow:0 12px 10px 0 rgba(8, 8, 8, 0.384),0 17px 50px 0 rgba(0,0,0,.19);
@@ -248,7 +248,7 @@ a{color:inherit;text-decoration:none}
 	position:absolute;
 	transform:rotateY(180deg);
 	backface-visibility:hidden;
-	transition:all .4s linear;
+	transition:all .8s linear;
 }
 .login-html .sign-in,
 .login-html .sign-up,
