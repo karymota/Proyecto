@@ -17,59 +17,62 @@
         <link rel="stylesheet" href="Catsito.css">
     </head>
     <body>
-        <section id="navar">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a href="Home.html"><img src="Fotos/logocat.png" alt=""
-                        width="125"
-                        /></a>
-
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="Home.html">Home <span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Ingresar.html">Ingresar</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="Contacto.html">Contacto</a>
-                        </li>
-
-                    </ul>
-
-                    <form class="form-inline my-2 my-lg-0">
-                        <input
-                            class="form-control mr-sm-2"
-                            type="search"
-                            placeholder="Buscar"
-                            aria-label="Buscar"
-                            />
-                        <button class="btn" type="submit">
-                            <img src="Fotos/lupa-blanca.png" alt="" width="27"
-                                />
-                        </button>
-                    </form>
-                </div>
-            </nav>
-        </section>
-
+      <section id="navar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container-fluid">
+          <a href="Home.html"><img src="Fotos/logocat.png" alt="" width="125"
+              /></a>
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Ingresar.html">Ingresar</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+              </li>
+  
+            </ul>
+  
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+  
+                />
+              <button class="btn " type="submit">
+                <img src="Fotos/lupa-blanca.png" alt="" width="24">
+              </button>
+            </form>
+          </div>
+  
+              <div class="carro">
+                <h1 id="verCarrito">
+                  <span id="cantidadCarrito" class="cantidad-carrito"></span><img src="Fotos/gatocarro-PhotoRoom.png-PhotoRoom.png" alt="" width="75"></h1>
+                  
+              </div>
+  
+        </nav>
+      </section>
 
         <section id="form">
             <div class="fondo">
@@ -201,7 +204,9 @@
             </footer>
           </section>
           
-          
+          <script src="Js/products.js"></script>
+    <script src="Js/app.js"></script>
+    <script src="Js/carrito.js"></script>
 
             <script
                 src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

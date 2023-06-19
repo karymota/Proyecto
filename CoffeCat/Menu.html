@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="Catsito.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="carrito.js" async></script>
+    
   </head>
   <body>
     <section id="navar">
@@ -52,10 +52,6 @@
 
           </ul>
 
-          <div>
-            <img src="Fotos/gatocarro-PhotoRoom.png-PhotoRoom.png" alt="" width="75">
-          </div>
-
           <form class="form-inline my-2 my-lg-0">
             <input
               class="form-control mr-sm-2"
@@ -65,144 +61,28 @@
 
               />
             <button class="btn " type="submit">
-              <img src="Fotos/lupa-blanca.png" alt="" width="30">
+              <img src="Fotos/lupa-blanca.png" alt="" width="24">
             </button>
           </form>
         </div>
-       
-        
 
+            <div class="carro">
+              <h1 id="verCarrito">
+                <span id="cantidadCarrito" class="cantidad-carrito"></span><img src="Fotos/gatocarro-PhotoRoom.png-PhotoRoom.png" alt="" width="75"></h1>
+                
+            </div>
+          
       </nav>
     </section>
 <section id="menu">
     <section class="contenedor">
       <!-- Contenedor de elementos -->
-      <div class="contenedor-items">
-          <div class="item">
-              <span class="titulo-item">Gato cafe </span>
-              <img src="Fotos/cafegato-removebg-preview.png" alt="" class="img-item">
-              <span class="precio-item">$3.000</span>
-              <button class="boton-item">Agregar al Catrrito</button>
-          </div>
-          <div class="item">
-              <span class="titulo-item">Frappe de cafe</span>
-              <img src="Fotos/frappecafe-removebg-preview.png" alt="" class="img-item">
-              <span class="precio-item">$4.000</span>
-              <button class="boton-item">Agregar al Catrrito</button>
-          </div>
-          <div class="item">
-              <span class="titulo-item">Frappe de frutilla</span>
-              <img src="Fotos/frappefrutilla-removebg-preview (1).png" alt="" class="img-item">
-              <span class="precio-item">$4.500</span>
-              <button class="boton-item">Agregar al Catrrito</button>
-          </div>
-          <div class="item">
-              <span class="titulo-item">Latte de macha</span>
-              <img src="Fotos/lattemacha-removebg-preview (1).png" alt="" class="img-item">
-              <span class="precio-item">$5.000</span>
-              <button class="boton-item">Agregar al Catrrito</button>
-          </div>
-          <div class="item">
-              <span class="titulo-item">A la berrie</span>
-              <img src="Fotos/arrozconleberri-removebg-preview.png" alt="" class="img-item">
-              <span class="precio-item">$4.000</span>
-              <button class="boton-item">Agregar al Catrrito</button>
-          </div>
-          <div class="item">
-              <span class="titulo-item">Helado de pistacho</span>
-              <img src="Fotos/helapistacho-removebg-preview.png" alt="" class="img-item">
-              <span class="precio-item">$2.000</span>
-              <button class="boton-item">Agregar al Catrrito</button>
-          </div>
-          <div class="item">
-              <span class="titulo-item">Pie de limon</span>
-              <img src="Fotos/pielimon-removebg-preview (1).png" alt="" class="img-item">
-              <span class="precio-item">$2.000</span>
-              <button class="boton-item">Agregar al Catrrito</button>
-          </div>
-          <div class="item">
-              <span class="titulo-item">Yogu pur pur</span>
-              <img src="Fotos/yogu-removebg-preview.png" alt="" class="img-item">
-              <span class="precio-item">$3.000</span>
-              <button class="boton-item">Agregar al Catrrito</button>
-          </div>
+      <div id="shopContent" class="contenedor-items"></div>
 
-          <div class="item">
-            <span class="titulo-item">Gato supremo</span>
-            <img src="Fotos/Gato_supremo-removebg-preview.png" alt="" class="img-item">
-            <span class="precio-item">$4.000</span>
-            <button class="boton-item">Agregar al Catrrito</button>
-        </div>
+      <!-- Contenedor de elementos -->
+      <div id="modal-container"  class="modal-container"></div>
 
-        <div class="item">
-          <span class="titulo-item">Gatitos golosos</span>
-          <img src="Fotos/Gatitos_golosos-removebg-preview.png" alt="" class="img-item">
-          <span class="precio-item">$8.600</span>
-          <button class="boton-item">Agregar al Catrrito</button>
-      </div>
-      <div class="item">
-        <span class="titulo-item">ronroneo salado</span>
-        <img src="Fotos/ronroneaoslado-removebg-preview.png" alt="" class="img-item">
-        <span class="precio-item">$5.500</span>
-        <button class="boton-item">Agregar al Catrrito</button>
-    </div>
-    <div class="item">
-      <span class="titulo-item">Para ronronear</span>
-      <img src="Fotos/para_ronronear-removebg-preview.png" alt="" class="img-item">
-      <span class="precio-item">$3.000</span>
-      <button class="boton-item">Agregar al Catrrito</button>
-  </div>
-      </div>
-      <!-- Carrito de Compras -->
-      <div class="carrito" id="carrito">
-          <div class="header-carrito">
-              <h2>Tu Catrrito</h2>
-          </div>
-
-          <div class="carrito-items">
-              <!-- 
-              <div class="carrito-item">
-                  <img src="img/boxengasse.png" width="80px" alt="">
-                  <div class="carrito-item-detalles">
-                      <span class="carrito-item-titulo">Box Engasse</span>
-                      <div class="selector-cantidad">
-                          <i class="fa-solid fa-minus restar-cantidad"></i>
-                          <input type="text" value="1" class="carrito-item-cantidad" disabled>
-                          <i class="fa-solid fa-plus sumar-cantidad"></i>
-                      </div>
-                      <span class="carrito-item-precio">$15.000,00</span>
-                  </div>
-                 <span class="btn-eliminar">
-                      <i class="fa-solid fa-trash"></i>
-                 </span>
-              </div>
-              <div class="carrito-item">
-                  <img src="img/skinglam.png" width="80px" alt="">
-                  <div class="carrito-item-detalles">
-                      <span class="carrito-item-titulo">Skin Glam</span>
-                      <div class="selector-cantidad">
-                          <i class="fa-solid fa-minus restar-cantidad"></i>
-                          <input type="text" value="3" class="carrito-item-cantidad" disabled>
-                          <i class="fa-solid fa-plus sumar-cantidad"></i>
-                      </div>
-                      <span class="carrito-item-precio">$18.000,00</span>
-                  </div>
-                 <button class="btn-eliminar">
-                      <i class="fa-solid fa-trash"></i>
-                 </button>
-              </div>
-               -->
-          </div>
-          <div class="carrito-total">
-              <div class="fila">
-                  <strong>Tu Total : </strong>
-                  <span class="carrito-precio-total">
-                      $0
-                  </span>
-              </div>
-              <button class="btn-pagar">Pagar<i class="fa-solid fa-bag-shopping"></i> </button>
-          </div>
-      </div>
+     
   </section>
 </section>
 <section id="footer">
@@ -261,6 +141,10 @@
   </footer>
 </section>
     </section>
+    <script src="Js/products.js"></script>
+    <script src="Js/app.js"></script>
+    <script src="Js/carrito.js"></script>
+   
     <script
     src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
